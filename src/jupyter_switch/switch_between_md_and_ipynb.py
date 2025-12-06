@@ -156,6 +156,11 @@ def detect_file_type(file_path):
 def convert_file(input_file):
     """
     Convert a file between markdown and notebook formats
+    
+    Recommended workflow for editing .ipynb files:
+    1. First, use this tool to convert .ipynb to .md for easier editing
+    2. Edit the .md file with your preferred text editor  
+    3. After completing all edits, use this tool again to convert .md back to .ipynb
 
     Args:
         input_file: Path to the input file
@@ -192,7 +197,8 @@ def main():
     Main CLI function for jupyter-switch command
     """
     parser = argparse.ArgumentParser(
-        description="Convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats",
+        description="Convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats. "
+                   "Recommended workflow: Convert .ipynb to .md for easier editing, then convert back to .ipynb when done.",
         prog="jupyter-switch",
     )
 

@@ -7,10 +7,13 @@ authors = [
     { name = "ChengZi", email = "277584121@qq.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "mcp>=1.0.0",
+]
 
 [project.scripts]
 jupyter-switch = "jupyter_switch:main"
+jupyter-switch-mcp = "jupyter_switch.mcp_server:main"
 
 [build-system]
 requires = ["hatchling"]
