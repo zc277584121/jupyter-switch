@@ -27,7 +27,7 @@ uvx jupyter-switch example.md
 uvx jupyter-switch example.ipynb
 ```
 
-### Installation and Execution (Not Recommended)
+### Installation and Execution Via Pip (Not Recommended)
 
 Install the package using pip:
 
