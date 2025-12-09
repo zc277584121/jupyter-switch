@@ -13,6 +13,53 @@ A powerful, lightweight and intuitive tool to seamlessly convert between Markdow
 - 📋 **Preserves structure**: Maintains code blocks, markdown content, and cell structure
 - 🔧 **MCP integration**: Works as an MCP server tool for AI assistants
 
+## 📦 CLI Usage
+
+### Installation and Execution (Recommended) ⚡️
+
+[`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
+
+```bash
+# Convert example.md to example.ipynb
+uvx jupyter-switch example.md
+
+# Convert example.ipynb to example.md
+uvx jupyter-switch example.ipynb
+```
+
+### Installation (Not Recommended)
+
+Install the package using pip:
+
+```bash
+pip install jupyter-switch
+```
+
+Then execute the command:
+
+```bash
+# Convert a Markdown file to Jupyter Notebook
+jupyter-switch example.md
+
+# Convert a Jupyter Notebook to Markdown
+jupyter-switch example.ipynb
+```
+
+Note: Unlike `uvx` which installs and executes in one command, `pip` requires a separate installation step first.
+
+The tool will automatically:
+- Detect the input file format
+- Generate the appropriate output filename
+- Create a backup if the output file already exists
+- Convert the content while preserving structure
+
+### Help 🆘
+
+```bash
+jupyter-switch --help
+jupyter-switch --version
+```
+
 ## 🤖 MCP Tool Usage (Recommended for AI Assistants)
 
 This package provides an MCP (Model Context Protocol) server that can be used with AI assistants like Claude.
@@ -46,57 +93,6 @@ Add to your MCP settings configuration:
 
 ```
 "Translate this notebook to French, using jupyter-switch"
-```
-
-
-
-
-
-## 📦 CLI Usage
-
-### Installation
-
-Install the package using pip:
-
-```bash
-pip install jupyter-switch
-```
-
-### Usage
-
-The main command is `jupyter-switch`:
-
-```bash
-# Convert a Markdown file to Jupyter Notebook
-jupyter-switch example.md
-
-# Convert a Jupyter Notebook to Markdown
-jupyter-switch example.ipynb
-```
-
-### Install with uv (Recommended) ⚡️
-
-[`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
-
-```bash
-# Convert README.md to README.ipynb
-uvx jupyter-switch README.md
-
-# Convert notebook.ipynb to notebook.md
-uvx jupyter-switch notebook.ipynb
-```
-
-The tool will automatically:
-- Detect the input file format
-- Generate the appropriate output filename
-- Create a backup if the output file already exists
-- Convert the content while preserving structure
-
-### Help 🆘
-
-```bash
-jupyter-switch --help
-jupyter-switch --version
 ```
 
 ## Conversion Details 🔄

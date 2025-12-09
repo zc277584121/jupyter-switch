@@ -13,6 +13,53 @@
 - 📋 **保持结构**：保留代码块、markdown 内容和单元格结构
 - 🔧 **MCP 集成**：可作为 MCP 服务器工具供 AI 助手使用
 
+## 📦 CLI 使用
+
+### 安装和执行（推荐的方法）⚡️
+
+[`uvx`](https://docs.astral.sh/uv/concepts/tools/) 会自动安装包并运行命令。
+
+```bash
+# Convert example.md to example.ipynb
+uvx jupyter-switch example.md
+
+# Convert example.ipynb to example.md
+uvx jupyter-switch example.ipynb
+```
+
+### 安装（不推荐）
+
+使用 pip 安装：
+
+```bash
+pip install jupyter-switch
+```
+
+然后执行命令：
+
+```bash
+# Convert example.md to example.ipynb
+jupyter-switch example.md
+
+# Convert example.ipynb to example.md
+jupyter-switch example.ipynb
+```
+
+注意：与 `uvx` 在一条命令中完成安装和执行不同，`pip` 需要先单独安装。
+
+工具会自动：
+- 检测输入文件格式
+- 生成相应的输出文件名
+- 如果输出文件已存在则创建备份
+- 在保持结构的同时转换内容
+
+### 帮助 🆘
+
+```bash
+jupyter-switch --help
+jupyter-switch --version
+```
+
 ## 🤖 MCP 工具使用（推荐用于 AI 助手）
 
 本包提供了一个 MCP（Model Context Protocol）服务器，可与 Claude 等 AI 助手配合使用。
@@ -46,53 +93,6 @@
 
 ```
 "使用 jupyter-switch 将此 notebook 翻译成法语"
-```
-
-## 📦 CLI 使用
-
-### 安装
-
-使用 pip 安装：
-
-```bash
-pip install jupyter-switch
-```
-
-### 使用方法
-
-主要命令是 `jupyter-switch`：
-
-```bash
-# 将 Markdown 文件转换为 Jupyter Notebook
-jupyter-switch example.md
-
-# 将 Jupyter Notebook 转换为 Markdown
-jupyter-switch example.ipynb
-```
-
-### 使用 uv 安装（推荐）⚡️
-
-[`uvx`](https://docs.astral.sh/uv/concepts/tools/) 会自动安装包并运行命令。
-
-```bash
-# 将 README.md 转换为 README.ipynb
-uvx jupyter-switch README.md
-
-# 将 notebook.ipynb 转换为 notebook.md
-uvx jupyter-switch notebook.ipynb
-```
-
-工具会自动：
-- 检测输入文件格式
-- 生成相应的输出文件名
-- 如果输出文件已存在则创建备份
-- 在保持结构的同时转换内容
-
-### 帮助 🆘
-
-```bash
-jupyter-switch --help
-jupyter-switch --version
 ```
 
 ## 转换详情 🔄
