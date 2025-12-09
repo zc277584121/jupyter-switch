@@ -35,17 +35,17 @@ uvx jupyter-switch example.ipynb
 pip install jupyter-switch
 ```
 
-### 使用方法
-
-主要命令是 `jupyter-switch`：
+然后执行命令：
 
 ```bash
-# 将 Markdown 文件转换为 Jupyter Notebook
+# Convert example.md to example.ipynb
 jupyter-switch example.md
 
-# 将 Jupyter Notebook 转换为 Markdown
+# Convert example.ipynb to example.md
 jupyter-switch example.ipynb
 ```
+
+注意：与 `uvx` 在一条命令中完成安装和执行不同，`pip` 需要先单独安装。
 
 工具会自动：
 - 检测输入文件格式

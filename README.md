@@ -35,9 +35,7 @@ Install the package using pip:
 pip install jupyter-switch
 ```
 
-### Usage
-
-The main command is `jupyter-switch`:
+Then execute the command:
 
 ```bash
 # Convert a Markdown file to Jupyter Notebook
@@ -46,6 +44,8 @@ jupyter-switch example.md
 # Convert a Jupyter Notebook to Markdown
 jupyter-switch example.ipynb
 ```
+
+Note: Unlike `uvx` which installs and executes in one command, `pip` requires a separate installation step first.
 
 The tool will automatically:
 - Detect the input file format
