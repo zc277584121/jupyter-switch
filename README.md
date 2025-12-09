@@ -20,11 +20,11 @@ A powerful, lightweight and intuitive tool to seamlessly convert between Markdow
 [`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
 
 ```bash
-# Convert README.md to README.ipynb
-uvx jupyter-switch README.md
+# Convert a Markdown file to Jupyter Notebook
+uvx jupyter-switch example.md
 
-# Convert notebook.ipynb to notebook.md
-uvx jupyter-switch notebook.ipynb
+# Convert a Jupyter Notebook to Markdown
+uvx jupyter-switch example.ipynb
 ```
 
 ### Installation
