@@ -15,7 +15,7 @@ A powerful, lightweight and intuitive tool to seamlessly convert between Markdow
 
 ## 📦 CLI Usage
 
-### Install with uv (Recommended) ⚡️
+### Installation and Execution (Recommended) ⚡️
 
 [`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
 
@@ -27,7 +27,7 @@ uvx jupyter-switch example.md
 uvx jupyter-switch example.ipynb
 ```
 
-### Installation
+### Installation (Not Recommended)
 
 Install the package using pip:
 

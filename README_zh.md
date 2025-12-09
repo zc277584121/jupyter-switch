@@ -15,7 +15,7 @@
 
 ## 📦 CLI 使用
 
-### 使用 uv 安装（推荐）⚡️
+### 安装和执行（推荐的方法）⚡️
 
 [`uvx`](https://docs.astral.sh/uv/concepts/tools/) 会自动安装包并运行命令。
 
@@ -27,7 +27,7 @@ uvx jupyter-switch example.md
 uvx jupyter-switch example.ipynb
 ```
 
-### 安装
+### 安装（不推荐）
 
 使用 pip 安装：
 
