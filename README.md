@@ -1,5 +1,7 @@
 # Jupyter Switch
 
+[中文版 README](README_zh.md) | [English README](README.md)
+
 [![PyPI version](https://badge.fury.io/py/jupyter-switch.svg)](https://badge.fury.io/py/jupyter-switch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
