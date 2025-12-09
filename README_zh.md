@@ -20,10 +20,10 @@
 [`uvx`](https://docs.astral.sh/uv/concepts/tools/) 会自动安装包并运行命令。
 
 ```bash
-# 将 Markdown 文件转换为 Jupyter Notebook
+# Convert example.md to example.ipynb
 uvx jupyter-switch example.md
 
-# 将 Jupyter Notebook 转换为 Markdown
+# Convert example.ipynb to example.md
 uvx jupyter-switch example.ipynb
 ```
 

@@ -20,10 +20,10 @@ A powerful, lightweight and intuitive tool to seamlessly convert between Markdow
 [`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
 
 ```bash
-# Convert a Markdown file to Jupyter Notebook
+# Convert example.md to example.ipynb
 uvx jupyter-switch example.md
 
-# Convert a Jupyter Notebook to Markdown
+# Convert example.ipynb to example.md
 uvx jupyter-switch example.ipynb
 ```
 
