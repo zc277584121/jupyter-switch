@@ -27,7 +27,7 @@ uvx jupyter-switch example.md
 uvx jupyter-switch example.ipynb
 ```
 
-### 安装（不推荐）
+### 通过pip安装和执行（不推荐）
 
 使用 pip 安装：
 
