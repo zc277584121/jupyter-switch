@@ -104,10 +104,15 @@ Add to your MCP settings configuration:
 - All other content becomes markdown cells
 - Adds appropriate notebook metadata and structure
 
-### Jupyter Notebook to Markdown  
+### Jupyter Notebook to Markdown
 - Code cells become Python code blocks
 - Markdown cells are preserved as-is
 - Cell outputs are ignored during conversion
+
+### File Safety
+- The **original input file is never modified or deleted** — conversion only creates a new output file
+- If the output file already exists, a **backup** (`.bak`) is created automatically before overwriting
+- **Note:** Only one backup is kept. Running the conversion multiple times will overwrite the previous `.bak` file, so earlier versions will be lost
 
 ## Requirements 🐍
 
